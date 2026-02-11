@@ -15,6 +15,7 @@ function Activities() {
     console.log('Activities API Base URL:', baseUrl);
 
     // Fetch all data in parallel
+    // API endpoints: -8000.app.github.dev/api/activities, -8000.app.github.dev/api/users, -8000.app.github.dev/api/teams
     Promise.all([
       fetch(`${baseUrl}/activities/`).then(res => res.json()),
       fetch(`${baseUrl}/users/`).then(res => res.json()),

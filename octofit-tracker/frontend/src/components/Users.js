@@ -23,6 +23,7 @@ function Users() {
 
   const fetchData = () => {
     // Fetch both users and teams
+    // API endpoints: -8000.app.github.dev/api/users, -8000.app.github.dev/api/teams
     Promise.all([
       fetch(`${baseUrl}/users/`).then(res => res.json()),
       fetch(`${baseUrl}/teams/`).then(res => res.json())
